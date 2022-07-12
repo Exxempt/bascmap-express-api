@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose')
 
-app.use('/', require('./routes/index'));
+//app.use('/', require('./routes/index'));
 
 const uri = process.env.DATABASE_URL;
 
