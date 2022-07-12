@@ -1,0 +1,26 @@
+{
+  "name": "bascmap-express-api",
+  "version": "1.0.0",
+  "description": "This project is for the BASC NFT collection. Express API to Vercel.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exxempt/bascmap-express-api.git"
+  },
+  "author": "Exxempt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Exxempt/bascmap-express-api/issues"
+  },
+  "homepage": "https://github.com/Exxempt/bascmap-express-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
