@@ -1,4 +1,5 @@
 var router = require('express').Router();
+const router = express.Router()
 const { apes } = require('../src/apes.js')
 
 router.get('/', function(req, res) {
