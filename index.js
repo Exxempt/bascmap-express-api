@@ -17,7 +17,8 @@ db.once('open', () => console.log('Connected to DB'))
 app.use(express.json())
 
 const subRouter = require('./routes/users')
-
-app.use('/users','/meta', subRouter)
+const subRoute = require('./routes/meta')
+app.use('/users', subRouter)
+app.use('/meta',subRoute)
 
 app.listen(3000, () => console.log('Server Started'))
