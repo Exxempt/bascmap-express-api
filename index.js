@@ -17,6 +17,6 @@ app.use(express.json())
 const subRouter = require('./routes/users')
 
 app.use('/users', subRouter)
-
+app.use(cors())
 
 app.listen(3000, () => console.log('Server Started'))
