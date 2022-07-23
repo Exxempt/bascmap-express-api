@@ -1,0 +1,25 @@
+
+
+
+GET https://bascmap-express-api.vercel.app/users
+
+###
+
+POST https://bascmap-express-api.vercel.app/users
+Content-Type: application/json
+
+{
+    "wallet": "reqbodywallet",
+    "country": {
+        "city": "rawr",
+        "country": "char",
+        "latitude": 41.467954,
+        "longitude": -85.908437,
+        "coordinates": [-47.023982, 38.878824]
+    },
+    "name": "Exx",
+    "discord": "Exx#123",
+    "twitter": "@Exx"
+
+}
+{ type: "Point", coordinates: [-57.023982, 30.878824] }

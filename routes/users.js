@@ -31,7 +31,13 @@ router.post('/', async (req, res) => {
         name: req.body.name,
         twitter: req.body.twitter,
         discord: req.body.discord,
-        tokens: req.body.tokens
+        tokens: req.body.tokens,
+        pfp: req.body.pfp,
+        signatureMessage: {
+            message: req.body.signatureMessage.message,
+            encodedSignature: req.body.signatureMessage.encodedSignature,
+            publicKey: req.body.signatureMessage.publicKey,
+        },
     })
     try {
         const newUser = await sub.save()

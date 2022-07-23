@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({    
     wallet: String,
     country: {
         city: String,
@@ -24,12 +24,16 @@ const UserSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     },
-    timeStamp: {
-        type: String,
-        required: true,
-        default: Date.now
+    tokens: [],
+    pfp: {
+        type: String
     },
-    tokens: []
+    signatureMessage: {
+        message: String,
+        encodedSignature: String,
+        publicKey: String,
+      }
+    
 })
 
 module.exports = mongoose.model('User', UserSchema)
